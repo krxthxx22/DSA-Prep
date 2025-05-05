@@ -4,21 +4,25 @@ using namespace std;
 
 
 // } Driver Code Ends
+
 // User function template for C++
 
 class Solution {
   public:
     bool arraySortedOrNot(vector<int>& arr) {
+        // code here
         int n = arr.size();
-        for(int i = 1;i<n;i++)
+        
+        for(int i = 1; i<n;i++)
         {
-            if(arr[i]<arr[i-1])
-            return false;
+           if(arr[i] < arr[i-1]) 
+           return false;
         }
         
         return true;
     }
 };
+
 
 //{ Driver Code Starts.
 
