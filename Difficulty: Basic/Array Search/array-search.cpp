@@ -4,6 +4,7 @@ using namespace std;
 
 
 // } Driver Code Ends
+
 class Solution {
   public:
     // Function to search x in arr
@@ -11,18 +12,19 @@ class Solution {
     // X: element to be searched for
     int search(vector<int>& arr, int x) {
 
-        int n = arr.size();
-        
-        for(int i =0;i<n;i++)
-        {
-            if(arr[i] == x)
-            return i;
+        // Your code here
+               for(int i =0; i<arr.size() ; i++){
+            if( arr[i] == x){
+              
+                return i;
+            }
+            
         }
-        
-        return -1;
-        
+        return -1 ;
     }
 };
+        
+
 
 //{ Driver Code Starts.
 
